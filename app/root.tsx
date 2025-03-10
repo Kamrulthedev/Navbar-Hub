@@ -7,9 +7,11 @@ import {
 } from "react-router";
 import type { Route } from "./+types/root";
 import "./app.css";
-import ErrorBoundary from "./components/ErrorBoundary";
 import Loading from "./components/Loading";
 import React from "react";
+import ErrorBoundary from "./components/ErrorBoundary";
+import Navber from "./share/Navber";
+import Footer from "./share/Footer";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -45,7 +47,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <div>
+     <Navber></Navber>
+      <Outlet />
+      <Footer></Footer>
+    </div>
+  );
 }
 
 export { ErrorBoundary };
