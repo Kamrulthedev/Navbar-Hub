@@ -10,7 +10,7 @@ export function meta({}: MetaArgs) {
 export default function Home() {
   return (
     <div className="h-screen">
-      <h1 className="text-5xl font-serif text-blue-600 text-center">Kamrul</h1>
+      <h1 className="text-5xl font-serif text-center text-fuchsia-700">Kamrul</h1>
     </div>
   );
 }

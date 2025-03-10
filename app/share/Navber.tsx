@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -8,21 +9,23 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-600 p-4">
+    <nav className="bg-indigo-50 p-4 text-black">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <h1 className="text-3xl font-serif text-white">Navbar</h1>
+        <h1 className="text-3xl font-serif">
+          <Link to="/">Navbar</Link>
+        </h1>
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex space-x-6">
-          <a href="#" className="text-white hover:text-gray-300">Home</a>
-          <a href="#" className="text-white hover:text-gray-300">About</a>
-          <a href="#" className="text-white hover:text-gray-300">Services</a>
-          <a href="#" className="text-white hover:text-gray-300">Contact</a>
+          <a href="#" className="hover:text-gray-300">Home</a>
+          <a href="#" className="hover:text-gray-300">About</a>
+          <a href="#" className="hover:text-gray-300">Services</a>
+          <a href="#" className="hover:text-gray-300">Contact</a>
         </div>
 
         {/* Mobile Menu Button */}
         <div className="lg:hidden flex items-center">
-          <button onClick={toggleMobileMenu} className="text-white">
+          <button onClick={toggleMobileMenu} className="text-indigo-700">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-6 w-6">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -30,12 +33,12 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Dropdown Menu */}
-      <div className={`lg:hidden ${isMobileMenuOpen ? "block" : "hidden"} bg-blue-700`}>
+      {/* Mobile Dropdown Menu with Animation */}
+      <div 
+        className={`lg:hidden transform transition-all duration-300 ${isMobileMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0 overflow-hidden"}`}
+      >
         <div className="relative">
-          <button className="w-full text-white py-2 px-4 text-left">
-            Menu
-          </button>
+          <button className="w-full py-2 px-4 text-black text-center">Menu</button>
           <div className={`${isMobileMenuOpen ? "block" : "hidden"} w-full bg-blue-800`}>
             <a href="#" className="block text-white py-2 px-4">Home</a>
             <a href="#" className="block text-white py-2 px-4">About</a>
