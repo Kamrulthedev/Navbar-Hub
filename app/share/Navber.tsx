@@ -1,4 +1,8 @@
 import { useState } from "react";
+import { FaFileContract, FaHome } from "react-icons/fa";
+import { FcAbout } from "react-icons/fc";
+import { GrServices } from "react-icons/gr";
+import { MdOutlineContactPhone } from "react-icons/md";
 import { Link } from "react-router";
 
 const Navbar = () => {
@@ -12,15 +16,15 @@ const Navbar = () => {
     <nav className="bg-indigo-50 p-4 text-black">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <h1 className="text-3xl font-serif">
-          <Link to="/">Navbar</Link>
+          <Link className="font-bold" to="/">Navbar Hub</Link>
         </h1>
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex space-x-6">
-          <a href="#" className="hover:text-gray-300">Home</a>
-          <a href="#" className="hover:text-gray-300">About</a>
-          <a href="#" className="hover:text-gray-300">Services</a>
-          <a href="#" className="hover:text-gray-300">Contact</a>
+        <div className="hidden lg:flex space-x-10 text-2xl">
+          <a href="#" className="hover:text-indigo-500"> <FaHome></FaHome></a>
+          <a href="#" className="hover:text-indigo-500"><FcAbout /></a>
+          <a href="#" className="hover:text-indigo-500"><GrServices ></GrServices ></a>
+          <a href="#" className="hover:text-indigo-500"><MdOutlineContactPhone ></MdOutlineContactPhone ></a>
         </div>
 
         {/* Mobile Menu Button */}
