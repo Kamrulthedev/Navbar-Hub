@@ -5,5 +5,3 @@ export default [
     // route("/about", "routes/about.tsx"), 
     // route("/contact", "routes/contact.tsx"), 
 ] satisfies RouteConfig;
-
-
