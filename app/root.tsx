@@ -5,7 +5,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
-import type { Route } from "./+types/root";
+import type { Route } from "./app/root";
 import "./app.css";
 import Loading from "./components/Loading";
 import React from "react";
