@@ -5,7 +5,8 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
-import type { Route } from "./app/root";
+import type { LinksFunction } from "react-router";
+
 import "./app.css";
 import Loading from "./components/Loading";
 import React from "react";
@@ -13,7 +14,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import Navber from "./share/Navber";
 import Footer from "./share/Footer";
 
-export const links: Route.LinksFunction = () => [
+export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
     rel: "preconnect",
