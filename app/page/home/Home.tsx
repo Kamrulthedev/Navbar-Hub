@@ -63,7 +63,7 @@ export default function Home() {
       </div>
 
       {/* Categories Section */}
-      <div className="px-6 py-12 bg-gray-900">
+      <div className="px-6 py-12">
         <h2 className="text-4xl font-bold text-center mb-8">Categories</h2>
         <div className="flex flex-wrap justify-center gap-4">
           {["Tech", "Health", "Travel", "Lifestyle", "Finance"].map((cat, i) => (
@@ -101,14 +101,14 @@ export default function Home() {
       </div>
 
       {/* Newsletter Subscription */}
-      <div className="px-6 py-12 bg-gray-900 text-center">
+      <div className="px-6 py-12 text-center">
         <h2 className="text-4xl font-bold">Subscribe to Our Newsletter</h2>
         <p className="mt-2">Get the latest blogs delivered straight to your inbox!</p>
         <div className="mt-6 flex justify-center">
           <input
             type="email"
             placeholder="Enter your email"
-            className="p-3 rounded-l-lg w-64 text-black"
+            className="p-3 rounded-l-lg w-64 text-white border border-b-fuchsia-500"
           />
           <button className="px-6 py-3 bg-fuchsia-600 hover:bg-fuchsia-700 transition-all rounded-r-lg">
             Subscribe
