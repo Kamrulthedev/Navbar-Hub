@@ -20,11 +20,11 @@ const Navbar = () => {
         </h1>
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex space-x-10 text-2xl">
-          <a href="#" className="hover:text-indigo-500"> <FaHome></FaHome></a>
-          <a href="#" className="hover:text-indigo-500"><FcAbout /></a>
-          <a href="#" className="hover:text-indigo-500"><GrServices ></GrServices ></a>
-          <a href="#" className="hover:text-indigo-500"><MdOutlineContactPhone ></MdOutlineContactPhone ></a>
+        <div className="hidden lg:flex space-x-10 text-2xl font-serif">
+          <a href="#" className="hover:text-indigo-500 flex gap-1"><span className="text-lg">Home</span></a>
+          <a href="#" className="hover:text-indigo-500 flex gap-1"><span className="text-lg"> About</span></a>
+          <a href="#" className="hover:text-indigo-500 flex gap-1"><span className="text-lg"> Services</span></a>
+          <a href="#" className="hover:text-indigo-500 flex gap-1"><span className="text-lg"> Contact</span></a>
         </div>
 
         {/* Mobile Menu Button */}
