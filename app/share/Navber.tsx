@@ -19,6 +19,7 @@ const Navbar = () => {
         <div className="hidden lg:flex space-x-10 text-2xl font-serif">
           <a href="/" className="hover:text-indigo-500 flex gap-1"><span className="text-lg">Home</span></a>
           <a href="/about" className="hover:text-indigo-500 flex gap-1"><span className="text-lg">About</span></a>
+          <a href="/news" className="hover:text-indigo-500 flex gap-1"><span className="text-lg">News</span></a>
           <a href="#" className="hover:text-indigo-500 flex gap-1"><span className="text-lg">Services</span></a>
           <a href="#" className="hover:text-indigo-500 flex gap-1"><span className="text-lg">Contact</span></a>
         </div>
