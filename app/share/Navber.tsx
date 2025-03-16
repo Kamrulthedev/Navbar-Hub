@@ -39,7 +39,7 @@ const Navbar = () => {
 
       {/* Mobile Dropdown Menu with Animation & Blur */}
       <div
-        className={`fixed top-0 left-0 w-full h-80 bg-black/30 backdrop-blur-md flex justify-center transition-all duration-300 ${isMobileMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-full pointer-events-none"}`}
+        className={`fixed top-0 left-0 w-full h-96 bg-black/30 backdrop-blur-md flex justify-center transition-all duration-300 ${isMobileMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-full pointer-events-none"}`}
       >
         <div className="relative w-full bg-white rounded-b-xl shadow-lg transition-all duration-300 transform p-4">
           {/* Close Button */}
@@ -53,8 +53,10 @@ const Navbar = () => {
           {/* Navigation Links */}
           <div className="mt-8 flex flex-col space-y-4 text-start text-2xl font-serif">
             <a href="#" className="block text-gray-700 hover:text-indigo-600 text-lg py-3">Home</a>
-            <a href="#" className="block text-gray-700 hover:text-indigo-600 text-lg py-3">About</a>
-            <a href="#" className="block text-gray-700 hover:text-indigo-600 text-lg py-3">Services</a>
+            <a href="/about" className="block text-gray-700 hover:text-indigo-600 text-lg py-3">About</a>
+            
+ <a href="/news" className="hover:text-indigo-500 flex gap-1"><span className="text-lg">News</span></a>
+            <a className="block text-gray-700 hover:text-indigo-600 text-lg py-3">Services</a>
             <a href="#" className="block text-gray-700 hover:text-indigo-600 text-lg py-3">Contact</a>
           </div>
         </div>
