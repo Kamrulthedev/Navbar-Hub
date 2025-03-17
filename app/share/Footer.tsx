@@ -26,10 +26,10 @@ const Footer = () => {
                 <div>
                     <h3 className="text-xl font-semibold mb-3">Follow Us</h3>
                     <div className="flex justify-center md:justify-start space-x-4">
-                        <a href="#" className="text-gray-400 hover:text-white text-xl"><FaFacebookF /></a>
-                        <a href="#" className="text-gray-400 hover:text-white text-xl"><FaTwitter /></a>
-                        <a href="#" className="text-gray-400 hover:text-white text-xl"><FaInstagram /></a>
-                        <a href="#" className="text-gray-400 hover:text-white text-xl"><FaLinkedinIn /></a>
+                        <a href="#" className="text-gray-400 hover:text-gray-500 text-xl"><FaFacebookF /></a>
+                        <a href="#" className="text-gray-400 hover:text-gray-500 text-xl"><FaTwitter /></a>
+                        <a href="#" className="text-gray-400 hover:text-gray-500 text-xl"><FaInstagram /></a>
+                        <a href="#" className="text-gray-400 hover:text-gray-500 text-xl"><FaLinkedinIn /></a>
                     </div>
                 </div>
             </div>
