@@ -54,8 +54,8 @@ const Navbar = () => {
           <div className="mt-8 flex flex-col space-y-4 text-start text-2xl font-serif">
             <a href="#" className="block text-gray-700 hover:text-indigo-600 text-lg py-3">Home</a>
             <a href="/about" className="block text-gray-700 hover:text-indigo-600 text-lg py-3">About</a>
-            
- <a href="/news" className="hover:text-indigo-500 flex gap-1"><span className="text-lg">News</span></a>
+
+            <a href="/news" className="hover:text-indigo-500 flex gap-1"><span className="text-lg">News</span></a>
             <a className="block text-gray-700 hover:text-indigo-600 text-lg py-3">Services</a>
             <a href="#" className="block text-gray-700 hover:text-indigo-600 text-lg py-3">Contact</a>
           </div>
