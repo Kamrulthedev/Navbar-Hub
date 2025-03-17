@@ -21,7 +21,7 @@ const Navbar = () => {
           <a href="/about" className="hover:text-indigo-500 flex gap-1"><span className="text-lg">About</span></a>
           <a href="/news" className="hover:text-indigo-500 flex gap-1"><span className="text-lg">News</span></a>
           <a href="/services" className="hover:text-indigo-500 flex gap-1"><span className="text-lg">Services</span></a>
-          <a href="#" className="hover:text-indigo-500 flex gap-1"><span className="text-lg">Contact</span></a>
+          <a href="/contact" className="hover:text-indigo-500 flex gap-1"><span className="text-lg">Contact</span></a>
         </div>
 
         {/* Mobile Menu Button */}
