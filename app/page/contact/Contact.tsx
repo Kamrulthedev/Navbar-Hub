@@ -3,7 +3,7 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock } from "react-icons/fa"
 
 const Contact = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-900 to-fuchsia-900 text-white p-6">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-white text-gray-800 p-6">
       <h1 className="text-4xl font-bold text-blue-600 mb-4">Get in Touch</h1>
       <p className="text-lg mb-6 text-center max-w-lg">
         Have any questions or feedback? Feel free to contact us using the form below or reach us through our contact details.
@@ -15,7 +15,7 @@ const Contact = () => {
             <label className="block text-gray-700 font-medium">Name</label>
             <input
               type="text"
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Enter your name"
             />
           </div>
@@ -23,14 +23,14 @@ const Contact = () => {
             <label className="block text-gray-700 font-medium">Email</label>
             <input
               type="email"
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Enter your email"
             />
           </div>
           <div>
             <label className="block text-gray-700 font-medium">Message</label>
             <textarea
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Enter your message"
             ></textarea>
           </div>
