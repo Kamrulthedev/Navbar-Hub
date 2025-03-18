@@ -1,15 +1,15 @@
 import React from "react";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-500 to-indigo-600 p-6 text-white">
-      <h1 className="text-4xl font-bold mb-4">Get in Touch</h1>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-white p-6 text-gray-800">
+      <h1 className="text-4xl font-bold text-blue-600 mb-4">Get in Touch</h1>
       <p className="text-lg mb-6 text-center max-w-lg">
-        We'd love to hear from you! Reach out to us through the form below or use our contact details.
+        Have any questions or feedback? Feel free to contact us using the form below or reach us through our contact details.
       </p>
       
-      <div className="bg-white p-8 rounded-lg shadow-lg text-gray-800 w-full max-w-md">
+      <div className="bg-gray-100 p-8 rounded-lg shadow-lg w-full max-w-lg">
         <form className="flex flex-col space-y-4">
           <div>
             <label className="block text-gray-700 font-medium">Name</label>
@@ -44,10 +44,12 @@ const Contact = () => {
         </form>
       </div>
       
-      <div className="mt-8 space-y-4 text-center">
-        <p className="flex items-center justify-center space-x-2"><FaPhoneAlt /> <span>+880 123 456 789</span></p>
-        <p className="flex items-center justify-center space-x-2"><FaEnvelope /> <span>support@navberhub.com</span></p>
-        <p className="flex items-center justify-center space-x-2"><FaMapMarkerAlt /> <span>Dhaka, Bangladesh</span></p>
+      <div className="mt-8 space-y-4 text-center bg-gray-100 p-6 rounded-lg shadow-lg w-full max-w-lg">
+        <h2 className="text-2xl font-semibold text-blue-600">Contact Information</h2>
+        <p className="flex items-center justify-center space-x-2 text-gray-700"><FaPhoneAlt /> <span>+880 123 456 789</span></p>
+        <p className="flex items-center justify-center space-x-2 text-gray-700"><FaEnvelope /> <span>support@navberhub.com</span></p>
+        <p className="flex items-center justify-center space-x-2 text-gray-700"><FaMapMarkerAlt /> <span>Dhaka, Bangladesh</span></p>
+        <p className="flex items-center justify-center space-x-2 text-gray-700"><FaClock /> <span>Office Hours: Mon-Fri, 9:00 AM - 6:00 PM</span></p>
       </div>
     </div>
   );
