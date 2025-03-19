@@ -16,8 +16,12 @@ const Services = () => {
                         <h1 className='text-3xl font-serif'>
                             <Link to=''>New Navber</Link>
                         </h1>
-                        <div>
-                            <a href="">Home</a>
+                        <div className='font-serif text-lg space-x-10 lg:flex hidden mr-12'>
+                            <a href="/" className='text-gray-500 hover:text-gray-700'>Home</a>
+                            <a href="/" className='text-gray-500 hover:text-gray-700'>About</a>
+                            <a href="/" className='text-gray-500 hover:text-gray-700'>Contact</a>
+                            <a href="/" className='text-gray-500 hover:text-gray-700'>Notification</a>
+                            <a href="/" className='text-gray-500 hover:text-gray-700'>Profile</a>
                         </div>
                      </div>
 
