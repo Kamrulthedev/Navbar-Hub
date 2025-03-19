@@ -12,7 +12,15 @@ const Services = () => {
             <section></section>
             <div>
                 <nav className="bg-indigo-50 p-4 text-black">
-                   
+                     <div className='ml-10 p-1'>
+                        <h1 className='text-3xl font-serif'>
+                            <Link to=''>New Navber</Link>
+                        </h1>
+                        <div>
+
+                        </div>
+                     </div>
+
                 </nav>
             </div>
         </div>
