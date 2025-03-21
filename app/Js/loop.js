@@ -6,6 +6,10 @@
 
 // for(let i = 0; i < 30; console.log(i = i + 5));
 
-let sum = 0;
-for (let i = 0; i <= 100; sum = sum + i, i++); 
-console.log(sum);
+// let sum = 0;
+// for (let i = 0; i <= 100; sum = sum + i, i++); 
+// console.log(sum);
+
+
+
+console.log(Math.floor(Math.random()*10))
