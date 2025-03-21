@@ -12,8 +12,8 @@
 
 
 
-console.log(Math.floor(Math.random()*10));
+// console.log(Math.floor(Math.random()*10));
 
-let OTP = '';
-for(let i = 0; i <4; OTP = OTP + Math.floor(Math.random() *10), i ++);
-console.log(OTP);
+// let OTP = '';
+// for(let i = 0; i <4; OTP = OTP + Math.floor(Math.random() *10), i ++);
+// console.log(OTP);
